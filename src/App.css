@@ -1,0 +1,106 @@
+.todoContainer {
+  height: 90vh;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.todoContainer input {
+  height: 40px;
+  width: 30%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightblue;
+}
+
+input::placeholder {
+  font-size: large;
+  margin-left: 10px;
+}
+
+.todoContainer button {
+  height: 40px;
+  margin-left: 10px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.alltodos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.alltodos button {
+  height: 40px;
+  background-color: purple;
+  padding: -1px;
+}
+
+table {
+  border: 1px solid purple;
+  padding: 10px;
+  width: 50%;
+}
+
+table,
+th,
+tr {
+  text-align: center;
+}
+table th {
+  background-color: #000;
+  color: whitesmoke;
+  height: 30px;
+}
+
+table tr td {
+  padding: 10px;
+}
+
+table td {
+  font-size: larger;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .todoContainer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+  .todoContainer input {
+    height: 40px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightblue;
+  }
+  .alltodos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 245px;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  table {
+    border: 1px solid purple;
+    padding: 10px;
+    width: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
